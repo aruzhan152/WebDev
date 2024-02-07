@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <style>
+        
+        .photos {
+            position: relative;
+            width: 420px;
+            left: 200px;
+        }
+        
+        .login {
+            position: absolute;
+            top:5px;
+            right: 270px;
+            margin-top: 40px;
+            width: 300px; 
+            background-color: #fff;
+            border:1px solid  rgb(142, 142, 142);
+            padding: 50px 34px 140px 10px;
+        }
+
+        .login input[type="text"],
+        .login input[type="password"] {
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 10px; 
+        }
+        .enter{
+            border: 0;
+            line-height: 2.5;
+            width: 325px;
+            font-size: 1rem;
+            right: 150px; 
+            color: #fff;
+            border-radius: 10px;
+            background-color: rgb(76,181,249);
+        }
+        #rightline_or {
+            height:0.5px;
+            background-color:#bbbcbc;
+            width: 130px; /*318px;*/
+            position: absolute;
+            top: 395px; 
+            right: 283px; 
+        }
+        #leftline_or {
+            height:0.5px;
+            background-color:#bbbcbc;
+            width: 130px; /*318px;*/
+            position: absolute;
+            top: 395px; 
+            right: 460px; 
+        }
+        #or{
+            color: #9fa0a0;
+            width: 300px; 
+            position: absolute;
+            top: 385px; 
+            right: 150px; 
+            font-family: -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        #facebook_mini{
+            position: absolute;
+            top: 432px; 
+            right: 502px; 
+        }
+        #facebook_logo{
+            position: absolute;
+            top: 435px; 
+            right: 360px; 
+            font-weight: bold;
+            text-decoration: none;
+            font-family: Arial;
+            font-size: 14.5px;
+            color: rgb(26,70,136);
+        }
+        #forgot_password{
+            position: absolute;
+            top: 470px; 
+            right: 386px; 
+            text-decoration: none;
+            color: rgb(26,70,136);
+            font-family: Arial;
+            font-size: 11px;
+        }
+        .no_account{
+            position: absolute;
+            top: 495px; 
+            right: 270px; 
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-family: Arial;
+            font-size: 13px;
+            border:1px solid  rgb(142, 142, 142);
+            padding:15px 65px;
+        }
+        #register{
+            font-weight: bold;
+            text-decoration: none;
+            color: rgb(76,181,249);
+        }
+        .download{
+            position: absolute;
+            top: 565px; 
+            right: 320px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 1.2;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            font-family: Arial;
+            font-size: 12px;
+        }
+        .nolink{
+            text-decoration: none;
+            color: rgb(142, 142, 142);
+        }
+        .second-line {
+            position: fixed;
+            bottom: 0; 
+            width: 100%;
+            text-align: center;
+            color: rgb(142, 142, 142);
+            font-family: Arial;
+            font-size: 12px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="photos">
+        <img src="iphone.png" width="440">
+    </div>
+    <div class = "frame1">
+    <div class="login">
+        <img class="logo" src="logo.png" width="250">
+        <form>
+            <input type="text" id="login" name="login" placeholder="Phone number, username, or email address"><br>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <button class="enter" type="button">Enter</button>
+        </form>
+    </div>
+        <hr id="rightline_or">
+        <hr id="leftline_or">
+    <p id="or">OR</p>
+    <img id="facebook_mini" src="faceb_logo.png" width="25">
+    <a id="facebook_logo" href="C:\Users\anara\OneDrive\Документы\WebDev\lab2\facebook\facebook.html">Log in via Facebook</a>
+    <a id="forgot_password" href="https://www.instagram.com/accounts/password/reset/">Forgot your password?</a>
+    <p class ="no_account">Don't have an account yet? <a id ="register" href="https://www.instagram.com/accounts/emailsignup/">Register</a>
+    </p>
+    <div class="download">
+        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3DD22C9958-B566-4125-881E-13BFA5CF9919%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge">
+            <img src="googleplay.png" width="118">
+        </a>
+        <img  src="micr.png" width="110">
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="first-line">
+        <a class="nolink" href="">Meta</a>
+        <a class="nolink" href="">About</a>
+        <a class="nolink" href="">Blog</a>
+        <a class="nolink" href="">Jobs</a>
+        <a class="nolink" href="">Help</a>
+        <a class="nolink" href="">API</a>
+        <a class="nolink" href="">Privacy</a>
+        <a class="nolink" href="">Terms</a>
+        <a class="nolink" href="">Locations</a>
+        <a class="nolink" href="">Instagram lite</a>
+        <a class="nolink" href="">Contact uploading & Non-Users</a>
+        <a class="nolink" href="">Meta Verified</a>
+    </div>
+
+    <div class="second-line">
+        <select name="language" id="sel-lang">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+        </select>
+        <p>© 2023 Instagram from Meta</p>
+    </div>
+</body>
+</html>

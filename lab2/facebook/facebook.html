@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
+    <style>
+        body, button, input, label, select, td, textarea {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+        }
+        body {
+            background: #f3f2f2;
+            color: #1c1e21;
+            direction: ltr;
+            line-height: 1.34;
+            margin: 0;
+            border:#f3f2f2 5px solid;
+            padding: 0;
+            unicode-bidi: embed;
+            overflow-y: scroll;
+        }
+        .logo {
+            margin-top: 240px;
+            margin-left: 150px;
+            height: 76px;
+            width: 262px;
+        }
+        #connect {
+            width: 368;
+            margin-top: 5px;
+            margin-left: 155px;
+            font-size: 24px;
+            padding: 0 0 20px;
+            color: #1c1e21;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        }
+        .login {
+            position: absolute;
+            top: 150px;
+            right: 150px;
+            width: 390px;
+            height: 300px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+        }
+        .login input[type="text"],
+        .login input[type="password"] {
+            width: 360px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .log {
+            border: 0;
+            color: #fff;
+            border-radius: 6px;
+            background-color: #1877f2;
+            cursor: pointer;
+            font-size: 20px;
+            line-height: 48px;
+            padding: 0 16px;
+            width: 400px;
+            font-weight: bold;
+        }
+        #email {
+            font-size: 17px;
+            padding: 14px 16px;
+            color: #ccd0d5;
+        }
+        #password {
+            font-size: 17px;
+            padding: 14px 16px;
+            color: #ccd0d5;
+        }
+        .forgot a {
+            position: absolute;
+            color: #1877f2;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 930px;
+            top: 353px;
+        }
+        .new{
+            background-color: #42b72a;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            line-height: 48px;
+            padding: 0 16px;
+            font-family: inherit;
+            position: absolute;
+            text-align: center;
+            vertical-align: middle;
+            color: #ffffff;
+            font-weight: bold;
+            margin-left: 890px; 
+            margin-top: 50px;
+            top: 62%;  
+        }
+        .create_page{
+            position: relative;
+            color: #1c1e21;
+            font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            padding-top: 0;
+            margin-left: 770px; 
+            margin-top: 75px; 
+        }
+        .line{
+            top: -35px;
+            width: 350px;
+            margin-left: 810px;
+            color: #dadde1; 
+            position: relative;
+        }
+        .footer {
+    padding-top: 100px;
+    background: #fff;
+}
+
+.footer2 {
+    margin: 0 auto;
+    width: 980px;
+    height: 210px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list_lang {
+    padding-left: 0;
+}
+
+.list_lang>li{
+    padding-right: 0;
+    padding-left: 10px;
+    display: inline-block;
+    color: #737373;
+}
+
+.second_line{
+    border-bottom: 1px solid #dddfe2;
+    font-size: 1px;
+    height: 8px;
+    margin-bottom: 8px;
+
+}
+
+.list2 {
+    line-height: 1.6;
+    margin-left: -20px;
+}
+
+.list2>li{
+    padding-right: 0;
+    padding-left: 20px;
+    display: inline-block;
+    color: #737373;
+}
+.copyright {
+    font-size: 11px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #737373;
+}
+    </style>
+    
+</head>
+<body>
+    <img class="logo" src="logo.png">
+    <p id = "connect">Connect with friends and the world<br> around you on Facebook.</p>
+    <div class="login">
+        <form>
+            <input type="text" id="email" name="login" placeholder="Email or phone number"><br>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <button class="log" type="button">Log In</button>
+        </form>
+    </div>
+
+    <div class="forgot"><a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzA3MTYyNTE0LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&amp;ars=facebook_login">Forgot password?</a></div>
+    <form>
+        <button class="new" type="button">Create new account</button>
+    </form>
+    <hr class = "line">
+    <p class = "create_page"> <strong>Create a page</strong> for a celebrity, brand or business.</p>
+    <div class="footer">
+        <div class="footer2">
+            <ul class="list_lang">
+                <li>English (US)</li>
+                <li>Русский</li>
+                <li>Türkçe</li>
+                <li>Bahasa Indonesia</li>
+                <li>中文(简体)</li>
+                <li>Қазақша</li>
+                <li>Deutsch</li>
+                <li>한국어</li>
+                <li>Shqip</li>
+                <li>Español</li>
+                <li>Português (Brasil)</li>
+            </ul>
+            <div class="second_line"></div>
+            <div class="sec_line">
+                <ul class="list2">
+                    <li>Sign Up</li>
+                    <li>Log In</li>
+                    <li>Messenger</li>
+                    <li>Facebook Lite</li>
+                    <li>Video</li>
+                    <li>Places</li>
+                    <li>Games</li>
+                    <li>Marketplace</li>
+                    <li>Meta Pay</li>
+                    <li>Meta Store</li>
+                    <li>Meta Quest</li>
+                    <li>Imagine with Meta AI</li>
+                    <li>Instagram</li>
+                    <li>Threads</li>
+                    <li>Fundraisers</li>
+                    <li>Services</li>
+                    <li>Voting Information Center</li>
+                    <li>Privacy Policy
+                    </li>
+                    <li>Privacy Center</li>
+                    <li>Groups</li>
+                    <li>About</li>
+                    <li>Create ad</li>
+                    <li>Create Page</li>
+                    <li>Developers
+                    </li>
+                    <li>Careers
+                    </li>
+                    <li>Cookies</li>
+                    <li>Ad choices</li>
+                    <li>Terms</li>
+                    <li>Help</li>
+                    <li>Contact Uploading  Non-Users</li>
+                    <li>Settings</li>
+                    <li>Activity log</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <span>Meta © 2024</span>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
