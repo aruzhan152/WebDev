@@ -1,0 +1,42 @@
+
+<ul class = "links">
+    <li>
+        <a [routerLink]="['/home']">Home </a>
+    </li>
+    <li>
+        <a [routerLink]="['/about']">About</a>
+    </li>
+</ul>
+<app-search></app-search>
+<app-tags></app-tags>
+
+<ul>
+    <li *ngFor="let sculptor of sculptors">
+        <a routerLink="/sculptor/{{sculptor.id}}"> 
+            <img src="{{sculptor.imageUrl}}" alt=""> 
+            <div class="content">
+                <div class="name">
+                   {{sculptor.name}}
+            </div>   
+                <span class="favorite {{sculptor.favorite?'':'not'}}">
+                  ♥  
+                </span>
+                <div class="product-item-footer">      
+                <div class="rating">
+                    <span>
+                        {{sculptor.rating}}
+                    </span>
+                </div>
+                <div class="description">
+                    <span>
+                        {{sculptor.description}}
+                    </span>
+                </div>
+                
+
+                </div>
+            
+            </div>
+        </a>
+    </li>
+</ul>

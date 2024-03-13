@@ -1,3 +1,8 @@
+.links{
+    display:flex;
+    margin:20px 20px;
+
+}
 ul{
     display:flex;
     justify-content:center;
@@ -9,6 +14,7 @@ ul{
 li a{
     overflow:hidden;
     color:#8b66b2;
+    margin:0 20px 20px 0;
 }
 li a img{
     height:20rem;
@@ -24,3 +30,8 @@ li a:hover{
     cursor:pointer;
 }
 
+.description{
+    color:black;
+    width:32rem;
+    align-items:center;
+}

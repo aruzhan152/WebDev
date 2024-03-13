@@ -1,0 +1,26 @@
+<ul class = "links">
+    <li>
+        <a [routerLink]="['/home']">Back</a>
+    </li>
+</ul>
+<div class="container">
+    <img [src]="sculptor.imageUrl" [alt]="sculptor.name" />
+
+    <div class = "details">
+        <div class = "header">
+            <span class="name">
+                {{sculptor.name}}
+            </span>
+            <span class="favorite {{sculptor.favorite?'':'not'}}">
+                ❤
+            </span>
+            
+        </div>
+        <div class="rating">
+            {{sculptor.rating}}
+        </div>
+        <div class="description">
+            {{sculptor.description}}
+        </div>
+    </div>
+</div>
