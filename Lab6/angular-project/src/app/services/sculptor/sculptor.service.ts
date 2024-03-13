@@ -7,6 +7,7 @@ import {Tag} from '../../shared/models/Tag';
 export class SculptorService {
 
   constructor() { }
+  
   getSculptorsById(id:number) : Sculptor{
     return this.getAll().find(sculptor=>sculptor.id == id)!;
   }

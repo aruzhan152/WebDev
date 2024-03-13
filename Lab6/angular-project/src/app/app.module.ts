@@ -11,6 +11,7 @@ import { TagsComponent } from './tags/tags.component';
 import { SculptorpageComponent } from './sculptorpage/sculptorpage.component';
 import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { Home1Component } from './home1/home1.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     TagsComponent,
     SculptorpageComponent,
     AboutComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    Home1Component
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,25 @@
+.links{
+    display:flex;
+    margin:20px 20px;
+
+}
+ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    list-style-type:none;
+    padding:0;
+}
+li a{
+    overflow:hidden;
+    color:#8b66b2;
+    margin:0 20px 20px 0;
+}
+
+h3{
+    
+    text-align: center;
+    margin:250px 250px 400px 250px
+   
+}
