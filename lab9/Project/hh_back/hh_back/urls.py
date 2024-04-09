@@ -1,5 +1,5 @@
 """
-URL configuration for shop_back project.
+URL configuration for hh_back project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -16,14 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.urls import re_path as url
-from ApiApplication import views
-
+from HHApi import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('products', views.ProductApiView.as_view()),
-    path('products/<int:pk>/', views.product_detail, name='product-detail'),
-    path('categories', views.CategoryApiView.as_view()),
-    path('categories/<int:pk>/', views.category_detail, name='category-detail'),
-    path('categories/<int:category_id>/products', views.products_by_category_id, name='product-by-category'),
+    path('vacancies/top_ten/', views.TopTenVacancies.as_view()),
+    path('vacancies', views.VacancyAPIView.as_view()),
+    path('vacancies/<int:id>', views.get_vacancy_by_id),
+    path('companies', views.CompanyAPIView.as_view()),
+    path('companies/<int:id>', views.get_company_by_id),
+
 ]

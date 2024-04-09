@@ -1,6 +1,7 @@
 
 *.pyc
 *~
+myvenv
 django_env
 __pycache__
 myvenv
