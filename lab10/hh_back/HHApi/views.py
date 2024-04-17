@@ -102,11 +102,10 @@ def get_vacancy_by_id(request, id):
     return JsonResponse(vacancy_json, safe=False)
 
 
-class TopTenVacancies(APIView):
-    def get(self, request):
-        top_ten_vacancies = Vacancy.objects.order_by('-salary')[:10]
-        data = [{'name': vacancy.name, 'salary': vacancy.salary} for vacancy in top_ten_vacancies]
-        return Response(data)
+def top_ten_vacancies(request):
+    top_ten_vacancies = Vacancy.objects.order_by('-salary')[:10]
+    data = [{'name': vacancy.name, 'salary': vacancy.salary} for vacancy in top_ten_vacancies]
+    return JsonResponse(data, safe=False)
 
 def get_vacancies_by_company(request, company_id):
     vacancies = Vacancy.objects.filter(company_id=company_id)

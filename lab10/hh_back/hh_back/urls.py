@@ -19,7 +19,7 @@ from django.urls import path
 from HHApi import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('vacancies/top_ten/', views.TopTenVacancies.as_view()),
+    path('vacancies/top_ten/', views.top_ten_vacancies),
     path('vacancies', views.VacancyAPIView.as_view()),
     path('vacancies/<int:id>', views.get_vacancy_by_id),
     path('companies', views.CompanyAPIView.as_view()),
